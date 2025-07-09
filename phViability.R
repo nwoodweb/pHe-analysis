@@ -443,5 +443,7 @@ ggplot() +
     geom_errorbar(data = consolidated.plot.data,
                   aes(x=pH,ymin=avg-stdev,ymax=avg+stdev),width=0.34) +
     facet_wrap(as.factor(consolidated.plot.data$hour)) + 
-    scale_fill_manual(values = c('#ffffcc','#78c679','#bcbddc','#6baed6','#969696')) + 
+    scale_fill_manual(values = c('#fee391','#addd8e','#9e9ac8','#2c7fb8','#666666')) + 
+    ylab('Viability (%)') + 
+    xlab('Time (Hours)') + 
     theme_woodn()
