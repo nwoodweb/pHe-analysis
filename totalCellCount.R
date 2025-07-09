@@ -1,4 +1,4 @@
-# 8 JULY 2028 WOOD-NT contact@nwoodweb.xyz
+# 9 JULY 2028 WOOD-NT contact@nwoodweb.xyz
 # ANALYSIS AND PLOT FOR TOTAL CELL COUNT AND PH
 # MIT LICENSE
 
@@ -73,23 +73,23 @@ iteration3.1hr.ph6 <- subset(iteration3.1hr,iteration3.1hr$ph == '6')
 iteration3.1hr.ph5 <- subset(iteration3.1hr,iteration3.1hr$ph == '5')
 iteration3.1hr.ph3 <- subset(iteration3.1hr,iteration3.1hr$ph == '3')
 
-iteration1.1hr.ph7.mean <- mean(iteration1.1hr.ph7$dapi)
-iteration1.1hr.ph7b.mean <- mean(iteration1.1hr.ph7b$dapi)
-iteration1.1hr.ph6.mean <- mean(iteration1.1hr.ph6$dapi)
-iteration1.1hr.ph5.mean <- mean(iteration1.1hr.ph5$dapi)
-iteration1.1hr.ph3.mean <- mean(iteration1.1hr.ph3$dapi)
+iteration1.1hr.ph7.mean <- mean(iteration1.1hr.ph7$total)
+iteration1.1hr.ph7b.mean <- mean(iteration1.1hr.ph7b$total)
+iteration1.1hr.ph6.mean <- mean(iteration1.1hr.ph6$total)
+iteration1.1hr.ph5.mean <- mean(iteration1.1hr.ph5$total)
+iteration1.1hr.ph3.mean <- mean(iteration1.1hr.ph3$total)
 
-iteration2.1hr.ph7.mean <- mean(iteration2.1hr.ph7$dapi)
-iteration2.1hr.ph7b.mean <- mean(iteration2.1hr.ph7b$dapi)
-iteration2.1hr.ph6.mean <- mean(iteration2.1hr.ph6$dapi)
-iteration2.1hr.ph5.mean <- mean(iteration2.1hr.ph5$dapi)
-iteration2.1hr.ph3.mean <- mean(iteration2.1hr.ph3$dapi)
+iteration2.1hr.ph7.mean <- mean(iteration2.1hr.ph7$total)
+iteration2.1hr.ph7b.mean <- mean(iteration2.1hr.ph7b$total)
+iteration2.1hr.ph6.mean <- mean(iteration2.1hr.ph6$total)
+iteration2.1hr.ph5.mean <- mean(iteration2.1hr.ph5$total)
+iteration2.1hr.ph3.mean <- mean(iteration2.1hr.ph3$total)
 
-iteration3.1hr.ph7.mean <- mean(iteration3.1hr.ph7$dapi)
-iteration3.1hr.ph7b.mean <- mean(iteration3.1hr.ph7b$dapi)
-iteration3.1hr.ph6.mean <- mean(iteration3.1hr.ph6$dapi)
-iteration3.1hr.ph5.mean <- mean(iteration3.1hr.ph5$dapi)
-iteration3.1hr.ph3.mean <- mean(iteration3.1hr.ph3$dapi)
+iteration3.1hr.ph7.mean <- mean(iteration3.1hr.ph7$total)
+iteration3.1hr.ph7b.mean <- mean(iteration3.1hr.ph7b$total)
+iteration3.1hr.ph6.mean <- mean(iteration3.1hr.ph6$total)
+iteration3.1hr.ph5.mean <- mean(iteration3.1hr.ph5$total)
+iteration3.1hr.ph3.mean <- mean(iteration3.1hr.ph3$total)
 
 # separate 4 hour into pH to extract means
 
@@ -111,23 +111,23 @@ iteration3.4hr.ph6 <- subset(iteration3.4hr,iteration3.4hr$ph == '6')
 iteration3.4hr.ph5 <- subset(iteration3.4hr,iteration3.4hr$ph == '5')
 iteration3.4hr.ph3 <- subset(iteration3.4hr,iteration3.4hr$ph == '3')
 
-iteration1.4hr.ph7.mean <- mean(iteration1.4hr.ph7$dapi)
-iteration1.4hr.ph7b.mean <- mean(iteration1.4hr.ph7b$dapi)
-iteration1.4hr.ph6.mean <- mean(iteration1.4hr.ph6$dapi)
-iteration1.4hr.ph5.mean <- mean(iteration1.4hr.ph5$dapi)
-iteration1.4hr.ph3.mean <- mean(iteration1.4hr.ph3$dapi)
+iteration1.4hr.ph7.mean <- mean(iteration1.4hr.ph7$total)
+iteration1.4hr.ph7b.mean <- mean(iteration1.4hr.ph7b$total)
+iteration1.4hr.ph6.mean <- mean(iteration1.4hr.ph6$total)
+iteration1.4hr.ph5.mean <- mean(iteration1.4hr.ph5$total)
+iteration1.4hr.ph3.mean <- mean(iteration1.4hr.ph3$total)
 
-iteration2.4hr.ph7.mean <- mean(iteration2.4hr.ph7$dapi)
-iteration2.4hr.ph7b.mean <- mean(iteration2.4hr.ph7b$dapi)
-iteration2.4hr.ph6.mean <- mean(iteration2.4hr.ph6$dapi)
-iteration2.4hr.ph5.mean <- mean(iteration2.4hr.ph5$dapi)
-iteration2.4hr.ph3.mean <- mean(iteration2.4hr.ph3$dapi)
+iteration2.4hr.ph7.mean <- mean(iteration2.4hr.ph7$total)
+iteration2.4hr.ph7b.mean <- mean(iteration2.4hr.ph7b$total)
+iteration2.4hr.ph6.mean <- mean(iteration2.4hr.ph6$total)
+iteration2.4hr.ph5.mean <- mean(iteration2.4hr.ph5$total)
+iteration2.4hr.ph3.mean <- mean(iteration2.4hr.ph3$total)
 
-iteration3.4hr.ph7.mean <- mean(iteration3.4hr.ph7$dapi)
-iteration3.4hr.ph7b.mean <- mean(iteration3.4hr.ph7b$dapi)
-iteration3.4hr.ph6.mean <- mean(iteration3.4hr.ph6$dapi)
-iteration3.4hr.ph5.mean <- mean(iteration3.4hr.ph5$dapi)
-iteration3.4hr.ph3.mean <- mean(iteration3.4hr.ph3$dapi)
+iteration3.4hr.ph7.mean <- mean(iteration3.4hr.ph7$total)
+iteration3.4hr.ph7b.mean <- mean(iteration3.4hr.ph7b$total)
+iteration3.4hr.ph6.mean <- mean(iteration3.4hr.ph6$total)
+iteration3.4hr.ph5.mean <- mean(iteration3.4hr.ph5$total)
+iteration3.4hr.ph3.mean <- mean(iteration3.4hr.ph3$total)
 
 # separate 12 hour into pH to extract means
 
@@ -149,23 +149,23 @@ iteration3.12hr.ph6 <- subset(iteration3.12hr,iteration3.12hr$ph == '6')
 iteration3.12hr.ph5 <- subset(iteration3.12hr,iteration3.12hr$ph == '5')
 iteration3.12hr.ph3 <- subset(iteration3.12hr,iteration3.12hr$ph == '3')
 
-iteration1.12hr.ph7.mean <- mean(iteration1.12hr.ph7$dapi)
-iteration1.12hr.ph7b.mean <- mean(iteration1.12hr.ph7b$dapi)
-iteration1.12hr.ph6.mean <- mean(iteration1.12hr.ph6$dapi)
-iteration1.12hr.ph5.mean <- mean(iteration1.12hr.ph5$dapi)
-iteration1.12hr.ph3.mean <- mean(iteration1.12hr.ph3$dapi)
+iteration1.12hr.ph7.mean <- mean(iteration1.12hr.ph7$total)
+iteration1.12hr.ph7b.mean <- mean(iteration1.12hr.ph7b$total)
+iteration1.12hr.ph6.mean <- mean(iteration1.12hr.ph6$total)
+iteration1.12hr.ph5.mean <- mean(iteration1.12hr.ph5$total)
+iteration1.12hr.ph3.mean <- mean(iteration1.12hr.ph3$total)
 
-iteration2.12hr.ph7.mean <- mean(iteration2.12hr.ph7$dapi)
-iteration2.12hr.ph7b.mean <- mean(iteration2.12hr.ph7b$dapi)
-iteration2.12hr.ph6.mean <- mean(iteration2.12hr.ph6$dapi)
-iteration2.12hr.ph5.mean <- mean(iteration2.12hr.ph5$dapi)
-iteration2.12hr.ph3.mean <- mean(iteration2.12hr.ph3$dapi)
+iteration2.12hr.ph7.mean <- mean(iteration2.12hr.ph7$total)
+iteration2.12hr.ph7b.mean <- mean(iteration2.12hr.ph7b$total)
+iteration2.12hr.ph6.mean <- mean(iteration2.12hr.ph6$total)
+iteration2.12hr.ph5.mean <- mean(iteration2.12hr.ph5$total)
+iteration2.12hr.ph3.mean <- mean(iteration2.12hr.ph3$total)
 
-iteration3.12hr.ph7.mean <- mean(iteration3.12hr.ph7$dapi)
-iteration3.12hr.ph7b.mean <- mean(iteration3.12hr.ph7b$dapi)
-iteration3.12hr.ph6.mean <- mean(iteration3.12hr.ph6$dapi)
-iteration3.12hr.ph5.mean <- mean(iteration3.12hr.ph5$dapi)
-iteration3.12hr.ph3.mean <- mean(iteration3.12hr.ph3$dapi)
+iteration3.12hr.ph7.mean <- mean(iteration3.12hr.ph7$total)
+iteration3.12hr.ph7b.mean <- mean(iteration3.12hr.ph7b$total)
+iteration3.12hr.ph6.mean <- mean(iteration3.12hr.ph6$total)
+iteration3.12hr.ph5.mean <- mean(iteration3.12hr.ph5$total)
+iteration3.12hr.ph3.mean <- mean(iteration3.12hr.ph3$total)
 
 
 
@@ -189,23 +189,23 @@ iteration3.24hr.ph6 <- subset(iteration3.24hr,iteration3.24hr$ph == '6')
 iteration3.24hr.ph5 <- subset(iteration3.24hr,iteration3.24hr$ph == '5')
 iteration3.24hr.ph3 <- subset(iteration3.24hr,iteration3.24hr$ph == '3')
 
-iteration1.24hr.ph7.mean <- mean(iteration1.24hr.ph7$dapi)
-iteration1.24hr.ph7b.mean <- mean(iteration1.24hr.ph7b$dapi)
-iteration1.24hr.ph6.mean <- mean(iteration1.24hr.ph6$dapi)
-iteration1.24hr.ph5.mean <- mean(iteration1.24hr.ph5$dapi)
-iteration1.24hr.ph3.mean <- mean(iteration1.24hr.ph3$dapi)
+iteration1.24hr.ph7.mean <- mean(iteration1.24hr.ph7$total)
+iteration1.24hr.ph7b.mean <- mean(iteration1.24hr.ph7b$total)
+iteration1.24hr.ph6.mean <- mean(iteration1.24hr.ph6$total)
+iteration1.24hr.ph5.mean <- mean(iteration1.24hr.ph5$total)
+iteration1.24hr.ph3.mean <- mean(iteration1.24hr.ph3$total)
 
-iteration2.24hr.ph7.mean <- mean(iteration2.24hr.ph7$dapi)
-iteration2.24hr.ph7b.mean <- mean(iteration2.24hr.ph7b$dapi)
-iteration2.24hr.ph6.mean <- mean(iteration2.24hr.ph6$dapi)
-iteration2.24hr.ph5.mean <- mean(iteration2.24hr.ph5$dapi)
-iteration2.24hr.ph3.mean <- mean(iteration2.24hr.ph3$dapi)
+iteration2.24hr.ph7.mean <- mean(iteration2.24hr.ph7$total)
+iteration2.24hr.ph7b.mean <- mean(iteration2.24hr.ph7b$total)
+iteration2.24hr.ph6.mean <- mean(iteration2.24hr.ph6$total)
+iteration2.24hr.ph5.mean <- mean(iteration2.24hr.ph5$total)
+iteration2.24hr.ph3.mean <- mean(iteration2.24hr.ph3$total)
 
-iteration3.24hr.ph7.mean <- mean(iteration3.24hr.ph7$dapi)
-iteration3.24hr.ph7b.mean <- mean(iteration3.24hr.ph7b$dapi)
-iteration3.24hr.ph6.mean <- mean(iteration3.24hr.ph6$dapi)
-iteration3.24hr.ph5.mean <- mean(iteration3.24hr.ph5$dapi)
-iteration3.24hr.ph3.mean <- mean(iteration3.24hr.ph3$dapi)
+iteration3.24hr.ph7.mean <- mean(iteration3.24hr.ph7$total)
+iteration3.24hr.ph7b.mean <- mean(iteration3.24hr.ph7b$total)
+iteration3.24hr.ph6.mean <- mean(iteration3.24hr.ph6$total)
+iteration3.24hr.ph5.mean <- mean(iteration3.24hr.ph5$total)
+iteration3.24hr.ph3.mean <- mean(iteration3.24hr.ph3$total)
 
 # separate 72 hour into pH to extract means
 iteration1.72hr
@@ -228,23 +228,23 @@ iteration3.72hr.ph5 <- subset(iteration3.72hr,iteration3.72hr$ph == '5')
 iteration3.72hr.ph3 <- subset(iteration3.72hr,iteration3.72hr$ph == '3')
 
 
-iteration1.72hr.ph7.mean <- mean(iteration1.72hr.ph7$dapi)
-iteration1.72hr.ph7b.mean <- mean(iteration1.72hr.ph7b$dapi)
-iteration1.72hr.ph6.mean <- mean(iteration1.72hr.ph6$dapi)
-iteration1.72hr.ph5.mean <- mean(iteration1.72hr.ph5$dapi)
-iteration1.72hr.ph3.mean <- mean(iteration1.72hr.ph3$dapi)
+iteration1.72hr.ph7.mean <- mean(iteration1.72hr.ph7$total)
+iteration1.72hr.ph7b.mean <- mean(iteration1.72hr.ph7b$total)
+iteration1.72hr.ph6.mean <- mean(iteration1.72hr.ph6$total)
+iteration1.72hr.ph5.mean <- mean(iteration1.72hr.ph5$total)
+iteration1.72hr.ph3.mean <- mean(iteration1.72hr.ph3$total)
 
-iteration2.72hr.ph7.mean <- mean(iteration2.72hr.ph7$dapi)
-iteration2.72hr.ph7b.mean <- mean(iteration2.72hr.ph7b$dapi)
-iteration2.72hr.ph6.mean <- mean(iteration2.72hr.ph6$dapi)
-iteration2.72hr.ph5.mean <- mean(iteration2.72hr.ph5$dapi)
-iteration2.72hr.ph3.mean <- mean(iteration2.72hr.ph3$dapi)
+iteration2.72hr.ph7.mean <- mean(iteration2.72hr.ph7$total)
+iteration2.72hr.ph7b.mean <- mean(iteration2.72hr.ph7b$total)
+iteration2.72hr.ph6.mean <- mean(iteration2.72hr.ph6$total)
+iteration2.72hr.ph5.mean <- mean(iteration2.72hr.ph5$total)
+iteration2.72hr.ph3.mean <- mean(iteration2.72hr.ph3$total)
 
-iteration3.72hr.ph7.mean <- mean(iteration3.72hr.ph7$dapi)
-iteration3.72hr.ph7b.mean <- mean(iteration3.72hr.ph7b$dapi)
-iteration3.72hr.ph6.mean <- mean(iteration3.72hr.ph6$dapi)
-iteration3.72hr.ph5.mean <- mean(iteration3.72hr.ph5$dapi)
-iteration3.72hr.ph3.mean <- mean(iteration3.72hr.ph3$dapi)
+iteration3.72hr.ph7.mean <- mean(iteration3.72hr.ph7$total)
+iteration3.72hr.ph7b.mean <- mean(iteration3.72hr.ph7b$total)
+iteration3.72hr.ph6.mean <- mean(iteration3.72hr.ph6$total)
+iteration3.72hr.ph5.mean <- mean(iteration3.72hr.ph5$total)
+iteration3.72hr.ph3.mean <- mean(iteration3.72hr.ph3$total)
 
 # combine all of our means into unified table (n=3)
 # wish there was better way to do this
@@ -313,7 +313,7 @@ shapiro.test(subset(extracted.24hr,extracted.24hr$pH == '7.3-7.4')$averages) #no
 shapiro.test(subset(extracted.24hr,extracted.24hr$pH == '6.8-7.3')$averages) #norm
 shapiro.test(subset(extracted.24hr,extracted.24hr$pH == '6.5-6.8')$averages) #norm
 shapiro.test(subset(extracted.24hr,extracted.24hr$pH == '5.5-5.8')$averages) #norm
-shapiro.test(subset(extracted.24hr,extracted.24hr$pH == '3.5-4.0')$averages) # NOT ? norm
+shapiro.test(subset(extracted.24hr,extracted.24hr$pH == '3.5-4.0')$averages) #norm
 
 shapiro.test(subset(extracted.12hr,extracted.12hr$pH == '7.3-7.4')$averages) #norm
 shapiro.test(subset(extracted.12hr,extracted.12hr$pH == '6.8-7.3')$averages) #norm
@@ -325,7 +325,7 @@ shapiro.test(subset(extracted.72hr,extracted.72hr$pH == '7.3-7.4')$averages) #no
 shapiro.test(subset(extracted.72hr,extracted.72hr$pH == '6.8-7.3')$averages) #norm
 shapiro.test(subset(extracted.72hr,extracted.72hr$pH == '6.5-6.8')$averages) #norm
 shapiro.test(subset(extracted.72hr,extracted.72hr$pH == '5.5-5.8')$averages) #norm
-shapiro.test(subset(extracted.72hr,extracted.72hr$pH == '3.5-4.0')$averages) # NOT norm
+shapiro.test(subset(extracted.72hr,extracted.72hr$pH == '3.5-4.0')$averages) #norm
 
 # our 3.5-4.0 groups are not normal, but all else? 
 # maybe do dunnett's test?
@@ -437,5 +437,8 @@ ggplot() +
     geom_errorbar(data = consolidated.plot.data,
                   aes(x=pH,ymin=avg-stdev,ymax=avg+stdev),width=0.34) +
     facet_wrap(as.factor(consolidated.plot.data$hour)) + 
-    scale_fill_manual(values = c('#ffffcc','#78c679','#bcbddc','#6baed6','#969696')) + 
+    ylab('Total Nuclei Count') + 
+    xlab('') + 
+    scale_fill_manual(values = c('#fee391','#addd8e','#9e9ac8','#2c7fb8','#666666')) + 
     theme_woodn()
+
