@@ -3,7 +3,9 @@ Scripts for analysis of pHe Data
 
 ## pHViability.R
 
-This R script takes 
+This R script takes counted nuclei (DAPI-total, FITC-dead via SYTOX Green) and 
+arranges them such that hypothesis testing and plotting can be done with minimal
+intervention in spreadsheet software. 
 
 ## totalCellCount.R
 
