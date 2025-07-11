@@ -1,24 +1,37 @@
-# NATHAN WOOD (contact@nwoodweb.xyz) 2025
-# Convert NHE1 grayscale pixel intensity to heatmap with viridis pallette
+# 11 JULY 2025 WOOD-NT (contact@nwoodweb.xyz)
+#
 # MIT LICENSE
 
-# NEEDS WORK
-
 import tifffile
-import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-import glob
-import os
+from skimage import exposure, img_as_ubyte
+from skimage.restoration import denoise_tv_chambolle
+from skimage.filters import gaussian
 
-# define input and output directories
-inputDir = os.path.expanduser("/data/nhe1/")
-outputDir = os.path.expanduser("/data/nhe1/data")
 
-# iterate through
-for img in sorted(glob(os.path.join(inputDir,"*.tif"))):
-    print(img)
-    image = tifffile.imread(img)
-    # Choose viridis pallette https://matplotlib.org/stable/users/explain/colors/colormaps.html
-    viridis = plt.get_cmap('viridis')
-    heatMap = (viridis(image) 
+
+# load image
+image = tifffile.imread('./ph7-01-nhe1-corrected-set.tif')
+# extract the number of optical sections
+zStack = image.shape[0] 
+print(image.shape)
+
+processedSlices = []
+# iterate through each optical section
+for i in range(zStack):
+    current = image[i,:,:]
+    normalized = exposure.rescale_intensity(current,in_range='image')
+#    denoised = denoise_tv_chambolle(normalized,weight=0.1) 
+#    denoisedReduced = img_as_ubyte(denoised)
+    denoisedReduced = img_as_ubyte(normalized)
+    processedSlices.append(denoisedReduced)
+
+final = np.stack(processedSlices, axis=0)
+tifffile.imwrite('./test.tif',final)
+'''
+    plt.figure(figsize=(10,10))
+    plt.imshow(denoisedReduced, cmap='viridis')
+    plt.axis('off')
+    plt.show()
+'''
