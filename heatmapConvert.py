@@ -9,7 +9,7 @@ from skimage import exposure, img_as_ubyte
 from skimage.restoration import denoise_tv_chambolle
 from skimage.filters import gaussian
 from skimage.morphology import opening, disk
-import cv2 # OpenCV for video writing
+import cv2 
 
 # load image
 image = tifffile.imread('./ph7-01-nhe1-corrected-set.tif')
